@@ -4,9 +4,9 @@
 
 Part of the [commitizen](https://github.com/commitizen/cz-cli) family. Prompts for [conventional changelog](https://github.com/conventional-changelog/conventional-changelog) standard and also prompts for a mandatory GitLab issue.
 
-[![npm version](https://img.shields.io/npm/v/@gangster/cz-conventional-changelog-for-gitlab.svg?style=flat-square)](https://www.npmjs.org/package/@gangster/cz-conventional-changelog-for-gitlab)
-[![npm downloads](https://img.shields.io/npm/dm/@gangster/cz-conventional-changelog-for-gitlab.svg?style=flat-square)](http://npm-stat.com/charts.html?package=@gangster/cz-conventional-changelog-for-gitlab)
-[![Build Status](https://img.shields.io/travis/gangster/cz-conventional-changelog-for-gitlab.svg?style=flat-square)](https://travis-ci.org/gangster/cz-conventional-changelog-for-gitlab)
+[![npm version](https://img.shields.io/npm/v/@ontra/cz-conventional-changelog-for-gitlab.svg?style=flat-square)](https://www.npmjs.org/package/@ontra/cz-conventional-changelog-for-gitlab)
+[![npm downloads](https://img.shields.io/npm/dm/@ontra/cz-conventional-changelog-for-gitlab.svg?style=flat-square)](http://npm-stat.com/charts.html?package=@ontra/cz-conventional-changelog-for-gitlab)
+[![Build Status](https://img.shields.io/travis/ontra/cz-conventional-changelog-for-gitlab.svg?style=flat-square)](https://travis-ci.org/ontra/cz-conventional-changelog-for-gitlab)
 
 ## Features
 
@@ -18,7 +18,7 @@ Part of the [commitizen](https://github.com/commitizen/cz-cli) family. Prompts f
 ### Installation
 
 ```bash
-npm install commitizen @gangster/cz-conventional-changelog-for-gitlab
+npm install commitizen @ontra/cz-conventional-changelog-for-gitlab
 ```
 
 and then add the following to package.json:
@@ -30,7 +30,7 @@ and then add the following to package.json:
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/@gangster/cz-conventional-changelog-for-gitlab"
+      "path": "./node_modules/@ontra/cz-conventional-changelog-for-gitlab"
     }
   }
 }
@@ -38,7 +38,7 @@ and then add the following to package.json:
 
 ### Usage
 
-![Gif of terminal when using cz-conventional-changelog-for-gitlab](https://raw.githubusercontent.com/gangster/cz-conventional-changelog-for-gitlab/master/images/demo.gif)
+![Gif of terminal when using cz-conventional-changelog-for-gitlab](https://raw.githubusercontent.com/ontra/cz-conventional-changelog-for-gitlab/master/images/demo.gif)
 
 ## Configuration
 
@@ -102,9 +102,9 @@ Alternatively, if you want to create your own profile, you can use the _configur
 Here is an example:
 **./index.js**
 ```javascript
-const custom = require('@gangster/cz-conventional-changelog-for-gitlab/configurable');
+const custom = require('@ontra/cz-conventional-changelog-for-gitlab/configurable');
 // You can do this optionally if you want to extend the commit types
-const defaultTypes = require('@gangster/cz-conventional-changelog-for-gitlab/types');
+const defaultTypes = require('@ontra/cz-conventional-changelog-for-gitlab/types');
 
 module.exports = custom({
   types: {
