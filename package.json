@@ -1,0 +1,63 @@
+{
+  "name": "@ontra/cz-conventional-changelog-for-gitlab",
+  "version": "0.0.0-semantically-released",
+  "description": "Commitizen adapter following the conventional-changelog format and also asking for Gitlab issue.",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "test": "mocha *.test.js",
+    "format": "prettier --write *.js",
+    "semantic-release": "semantic-release",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "homepage": "https://github.com/ontra-ai/cz-conventional-changelog-for-gitlab",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ontra-ai/cz-conventional-changelog-for-gitlab.git"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">= 10"
+  },
+  "author": "Josh Deeden<jdeeden@ontra.ai>",
+  "license": "MIT",
+  "dependencies": {
+    "boxen": "^5.0.0",
+    "chalk": "^2.4.1",
+    "commitizen": "^4.2.4",
+    "inquirer": "^6.5.2",
+    "lodash.map": "^4.5.1",
+    "longest": "^2.0.1",
+    "right-pad": "^1.0.1",
+    "word-wrap": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "cosmiconfig": "^5.2.1",
+    "cz-conventional-changelog": "^3.1.0",
+    "mocha": "^6.2.0",
+    "mock-require": "^3.0.3",
+    "npm-force-resolutions": "0.0.10",
+    "prettier": "^1.15.3",
+    "semantic-release": "^17.4.3",
+    "semver": "^6.2.0"
+  },
+  "optionalDependencies": {
+    "@commitlint/load": ">6.1.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./index.js",
+      "gitlabMode": false,
+      "skipScope": true
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "resolutions": {
+    "minimist": "1.2.6"
+  }
+}
